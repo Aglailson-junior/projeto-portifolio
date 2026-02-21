@@ -13,6 +13,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+
 }
 
 :root{
@@ -64,9 +65,9 @@ nav#menu a:hover{
 }
 
 main{
-  width: 100vw;
+  width: 96vw;
   padding-top: 20px;
-  background-color: var(--fundo-card);
+  background-color: var(--fundo-principal);
 
   display: grid;
   grid-template-columns: 1fr 90vw 1fr;
@@ -79,7 +80,6 @@ section#ficha{
   padding: 20ox;
   border-radius: 6px;
   grid-column: 2;
-
 
 }
 
@@ -94,13 +94,18 @@ section#ficha img{
   display: block;
   margin: auto;
   margin-bottom: 15px;
-
+  margin-top: 6px;
 }
+
 
 section#ficha h1{
   color: var(--destaque);
   margin: 15px 0px;
   font-size: 1.6em;
+}
+
+section#ficha p, h1{
+  padding: 8px;
 }
 
 div#social{
@@ -120,5 +125,18 @@ div#social a{
 
 div#social a:hover{
   color: var(--destaque-inverso);
+}
 
+section#detalhes{
+  grid-column: 2;
+}
+
+article{
+  background-color: var(--fundo-card);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+article h2{
+  color: var(--destaque);
 }
