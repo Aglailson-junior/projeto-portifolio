@@ -70,6 +70,7 @@ main{
 
   display: grid;
   grid-template-columns: 1fr 90vw 1fr;
+  gap: 20px;
 
 }
 
@@ -109,6 +110,15 @@ div#social{
   margin-top: 10px;
   font-size: 2em;
   gap: 1em;
+}
 
+div#social a{
+  color: var(--destaque);
+  transition: color 0.4s;
+  padding-bottom: 10px;
+}
+
+div#social a:hover{
+  color: var(--destaque-inverso);
 
 }
