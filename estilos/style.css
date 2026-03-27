@@ -13,6 +13,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  text-decoration: none;
 
 }
 
@@ -26,11 +27,27 @@
   --fundo-card:#ffffff;
 }
 
+body.escuro{
+  --fundo-principal:#222222;
+
+  --texto :#e0e0e0;
+
+  --texto-inverso :#333333;
+
+  --destaque :#ff5522;
+
+  --destaque-inverso :#a73917;
+
+  --fundo-card :#393838;
+}
+
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
+
+  transition: background-color 1s, color 1s;
 }
 
 header{
